@@ -1,0 +1,260 @@
+\documentclass[grey]{hipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks = true,
+	linkcolor = blue,
+	filecolor = magenta,      
+	urlcolor = cyan,
+	urlcolor = red,
+	%pdftitle = {Overleaf Example},
+	%pdfpagemode=FullScreen,
+}
+
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.3\textwidth}
+\setlength{\rightcolwidth}{0.65\textwidth}
+
+%------------------------------------------------------------------
+\title{Hipster-CV}
+\author{\LaTeX{} Ninja}
+\date{March 2019}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+
+
+\header{\bg{headerfontbox}{headerfontboxfont}{Mathematiker} }{\bgupper{headerfontbox}{headerfontboxfont}{\bfseries\Huge Alexander Uhmann}}{\bg{headerfontbox}{headerfontboxfont}{\large Data Scientist}}{Alex_2023.png}{headerblue}{3.5cm}{2cm}
+
+
+
+%------------------------------------------------
+
+% hier muss die "unsichtbare" Überschrift rein, weil er sonst nicht die Paracols startet... komisch...
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.31}[0.55]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\bgupper{cvgreen}{white}{Facts} \\
+
+{\Large
+
+%\bg{cvgreen}{white}{personal} \\
+
+\begin{tabular}{ll}
+\faMale&Alexander Uhmann \\
+\faGlobe&nationality: Deutsch  \\
+\faBirthdayCake&07/01/1983 \\
+\faMapMarker&Leipzig  \\
+\end{tabular}
+}
+\bigskip
+
+%\bg{cvgreen}{white}{Areas of specialization} \\
+\bg{cvgreen}{white}{{\huge Spezialisierung}} \\
+
+{\Large
+Machine learning\\ 
+Deep learning
+}
+
+\bigskip
+
+\bgupper{cvgreen}{white}{Skills} \\
+{\large
+\bg{cvgreen}{white}{Languages}\\
+\bigskip
+\begin{minipage}[t]{\leftcolwidth}
+\begin{tabular}{l | ll}
+\textbf{Russish} &  & {\phantom{x}\footnotesize Muttersprache} \\
+\textbf{Deutsch} & B2-C1 & \pictofraction{\faCircle}{cvpurple}{3}{black!30}{1}{\tiny} \\
+\textbf{Englisch} & B1-B2 & \pictofraction{\faCircle}{cvpurple}{2}{black!30}{1}{\tiny} \\
+%\textbf{French}  & C2 & %\pictofraction{\faCircle}{cvpurple}{3}{black!30}{1}{\tiny}
+\end{tabular}
+\end{minipage}
+}
+
+
+
+\bigskip
+{
+\Large	
+\bg{cvgreen}{white}{Python Frameworks}\\
+}
+%\bubblediagram{{\textbf{a pirate's} \\\textbf{life}},  the sea, pillaging, plundering, ships, stealing, hijacking, \textbf{The Black}\\ \textbf{Pearl}}
+{
+\large	
+\bubblediagram{{\textbf{Python} \\\textbf{KI}}, Sklearn, Pandas, Numpy,	\textbf{TensorFlow}\\ \textbf{Pytorch}, Streamlit,
+FastApi }
+}
+
+{\Large
+\hspace{1cm} \color{labelcolour}{OS:} \hspace{0.5em}\icon{\faWindows}{labelcolour}{\Large} \hspace{0.5em} \icon{\faLinux}{labelcolour}{\Large} 
+}
+
+\bigskip
+
+{
+\Large\bg{cvgreen}{white}{IT \& programming} \\
+}
+\begin{minipage}[t]{0.3\textwidth}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     \bg{skilllabelcolour}{iconcolour}{html, css} &  \barrule{0.4}{0.5em}{cvpurple}\\
+     \bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.45}{0.5em}{cvgreen} \\
+     %\bg{skilllabelcolour}{iconcolour}{xslt} & \barrule{0.5}{0.5em}{cvpurple} \\
+     %\bg{skilllabelcolour}{iconcolour}{python} & \barrule{0.5}{0.5em}{cvpurple} \\
+     %\bg{skilllabelcolour}{iconcolour}{R} & \barrule{0.25}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{javascript} & \barrule{0.1}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{Docker, git, github} & \barrule{0.3}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{Heroku} & \barrule{0.3}{0.5em}{cvpurple} \\
+     
+\end{tabular}
+
+\bgupper{cvgreen}{white}{Soft Skills} \\
+{\large
+	\cvtag{Fleissigkeit}
+	\cvtag{Ehrlichkeit}
+	\cvtag{Respektabilität}
+}
+
+
+%\dashrule{}{}
+\end{minipage}
+
+
+\bigskip
+
+\scalebox{0.8}{
+\iconcross{\Huge}{white}{cvred}{\color{black!30}\faBook}{\href{mailto:the.latex.ninja@gmail.com}{\faEnvelopeO}}{\faPhone}{\faCode}
+}
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Short Resumé}
+
+\begin{tabular}{r| p{0.4\textwidth} c}
+    \cvevent{2018--2025}{Eigener Projekt}{Analyse der Wahlen}{Deutschland \color{cvred}}{Application.}{Python} \\
+    \cvevent{2022--2025}{Eigener Projekt}{Credit scoring}{Taiwan 2005 \color{cvred}}{Application.}{Python} \\
+    %\cvevent{2019}{Freelance Pirate}{Bucaneering}{Tortuga \color{cvred}}{This and that. The usual, aye?}{medal.jpeg} \\
+    %\cvevent{2016--2017}{Captain of the Black Pearl}{Lead}{Tortuga \color{cvred}}{Found a secret treasure, lost the ship.}{medal.jpeg}
+\end{tabular}
+
+\vspace{4em}
+
+\begin{minipage}[t]{0.4\textwidth}
+%\section*{Degrees}
+\section*{Bildung}
+\begin{tabular}{r p{0.6\textwidth} c}
+    \cvdegree{2000-2004}{Bachelor}{Mathematik}{Uni \color{headerblue}}{}{uni_k} \\
+    \cvdegree{2004-2006}{Master}{Mathematik}{Uni \color{headerblue}}{}{uni_k} \\
+    %\cvdegree{1715}{Bucaneering}{M.A.}{London \color{headerblue}}{}{medal.jpeg} \\
+    \cvdegree{2007-2010}{PhD}{Mathematik}{Uni \color{headerblue}}{}{uni_a.png}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.16\textwidth}
+\section*{Hobbies}
+% usage \hobbyicon{<fontawesome icon}{Text}{background color of circle}{size of icon}{space text below icon}
+\hobbyicon{\color{iconcolour}\faFlask}{Rhum}{cvgreen}{\iconsize}{2em} \hfill
+\hobbyicon{\color{iconcolour}\faBook}{The Code}{cvorange}{\iconsize}{2em}
+
+\hobbyicon{\color{iconcolour}\faComment}{Parler}{cvpurple}{\iconsize}{2em} \hspace{1em}
+\hobbyicon{\color{iconcolour}\faBeer}{Beer}{headerblue}{\iconsize}{2em}
+\end{minipage}
+
+\vspace{4em}
+
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Certificates}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
+	07/2022 - 09/2022 & Deutsch für den Beruf \\
+	09/2022 - 09/2022 & Relationale Datenbanken mit SQL\\
+    11/2022 - 12/2022 & Machine Learning \\
+    01/2023 - 01/2023 & Deep Learning \\
+    01/2023 - 02/2023 & Technisches Englisch 
+    %1715--1716 & Grant from the Pirate's Company
+\end{tabular}
+%\section*{Strenghts}
+%\section*{Soft Skills}
+%\cvtag{honest}
+%\cvtag{thieving}
+%\cvtag{handsome}
+%\section*{References}
+\vspace{4em}
+\section*{ Web-apps in github }
+%\cvkeyword{Will Turner}{cvgreen}{iconcolour}
+%\cvkeyword{Barbossa}{cvgreen}{iconcolour} \\
+
+%\cvkeyword{possibly Mr. Swan}{headerblue}{iconcolour}
+\cvkeyword{ \href{https://github.com/AlexanderUhmann/streamlit_cs}{App Credit Scoring}   }{headerblue}{iconcolour}
+
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Publications}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
+    1729 & \emph{How I almost got killed by Lady Swan}, Tortuga Printing Press. \\
+    1720 & ``Privateering for Beginners'', in: \emph{The Pragmatic Pirate} (1/1720).
+\end{tabular}
+\section*{Talks}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.6\textwidth}}
+    Nov. 1726 & ``How I lost my ship (\& and how to get it back)'', at: \emph{Annual Pirate's Conference} in Tortuga, Nov. 1726.
+\end{tabular}
+\end{minipage}
+
+
+
+
+
+
+
+
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small Alexander Uhmann \icon{\faEnvelopeO}{cvpurple}{} Sachsen \icon{\faMapMarker}{cvpurple}{} Leipzig \icon{\faPhone}{cvpurple}{} 0172/1854194 \newline\icon{\faAt}{cvpurple}{} \protect\url{alexander.uhmann@gmail.com}
+}
+\end{center}
+\end{minipage}
+
+
+\end{paracol}
+
+\end{document}
