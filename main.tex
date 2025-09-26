@@ -7,9 +7,9 @@
 \usepackage{hyperref}
 \hypersetup{
 	colorlinks = true,
-	linkcolor = blue,
-	filecolor = magenta,      
-	urlcolor = cyan,
+	%linkcolor = green,
+	%filecolor = magenta,      
+	%urlcolor = cyan,
 	urlcolor = red,
 	%pdftitle = {Overleaf Example},
 	%pdfpagemode=FullScreen,
@@ -42,18 +42,32 @@
 \header{\bg{headerfontbox}{headerfontboxfont}{Mathematiker} }{\bgupper{headerfontbox}{headerfontboxfont}{\bfseries\Huge Alexander Uhmann}}{\bg{headerfontbox}{headerfontboxfont}{\large Data Scientist}}{Alex_2023.png}{headerblue}{3.5cm}{2cm}
 
 
+\begin{flushright}
+	{\color{white}\Large 
+		%\icon{\faEnvelopeO}{cvpurple}{} Sachsen 
+		%\icon{\faMapMarker}{cvpurple}{} 04207 Leipzig
+	    \icon{\faPhone}{cvpurple}{} 0172/1854194\\ %\newline\icon{\faAt}{cvpurple}{}
+		\vspace{0.1em}
+	    \large\icon{\faEnvelopeO}{cvpurple}{}alexander.uhmann@gmail.com
+	    
+    }			
+\end{flushright}
+
+
+
 
 %------------------------------------------------
 
 % hier muss die "unsichtbare" Überschrift rein, weil er sonst nicht die Paracols startet... komisch...
 \subsection*{}
-\vspace{4em}
+\vspace{0.1em}
 
-\setlength{\columnsep}{1.5cm}
-\columnratio{0.31}[0.55]
+\setlength{\columnsep}{0.cm}
+\columnratio{0.33}[0.55]
 \begin{paracol}{2}
 \hbadness5000
-%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 
+%\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
 
 \paracolbackgroundoptions
 
@@ -69,10 +83,10 @@
 %\bg{cvgreen}{white}{personal} \\
 
 \begin{tabular}{ll}
-\faMale&Alexander Uhmann \\
-\faGlobe&nationality: Deutsch  \\
+%\faMale&Alexander Uhmann \\
+\faGlobe&Nationalität: Deutsch  \\
 \faBirthdayCake&07/01/1983 \\
-\faMapMarker&Leipzig  \\
+\faMapMarker&04207 Leipzig  \\
 \end{tabular}
 }
 \bigskip
@@ -93,7 +107,7 @@ Deep learning
 \bigskip
 \begin{minipage}[t]{\leftcolwidth}
 \begin{tabular}{l | ll}
-\textbf{Russish} &  & {\phantom{x}\footnotesize Muttersprache} \\
+\textbf{Russisch} &  & {\phantom{x}\footnotesize Muttersprache} \\
 \textbf{Deutsch} & B2-C1 & \pictofraction{\faCircle}{cvpurple}{3}{black!30}{1}{\tiny} \\
 \textbf{Englisch} & B1-B2 & \pictofraction{\faCircle}{cvpurple}{2}{black!30}{1}{\tiny} \\
 %\textbf{French}  & C2 & %\pictofraction{\faCircle}{cvpurple}{3}{black!30}{1}{\tiny}
@@ -111,8 +125,10 @@ Deep learning
 %\bubblediagram{{\textbf{a pirate's} \\\textbf{life}},  the sea, pillaging, plundering, ships, stealing, hijacking, \textbf{The Black}\\ \textbf{Pearl}}
 {
 \large	
-\bubblediagram{{\textbf{Python} \\\textbf{KI}}, Sklearn, Pandas, Numpy,	\textbf{TensorFlow}\\ \textbf{Pytorch}, Streamlit,
-FastApi }
+\bubblediagram
+{
+	{\textbf{Python} \\\textbf{KI}}, Sklearn, Pandas, Numpy,	\textbf{TensorFlow}\\ \textbf{Pytorch}, Streamlit,
+FastApi, {jupyter\\ notebook \\ VS code}}
 }
 
 {\Large
@@ -127,22 +143,23 @@ FastApi }
 \begin{minipage}[t]{0.3\textwidth}
 \begin{tabular}{r @{\hspace{0.5em}}l}
      \bg{skilllabelcolour}{iconcolour}{html, css} &  \barrule{0.4}{0.5em}{cvpurple}\\
-     \bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.45}{0.5em}{cvgreen} \\
+     \bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.45}{0.5em}{cvpurple} \\
      %\bg{skilllabelcolour}{iconcolour}{xslt} & \barrule{0.5}{0.5em}{cvpurple} \\
      %\bg{skilllabelcolour}{iconcolour}{python} & \barrule{0.5}{0.5em}{cvpurple} \\
      %\bg{skilllabelcolour}{iconcolour}{R} & \barrule{0.25}{0.5em}{cvpurple} \\
      \bg{skilllabelcolour}{iconcolour}{javascript} & \barrule{0.1}{0.5em}{cvpurple} \\
-     \bg{skilllabelcolour}{iconcolour}{Docker, git, github} & \barrule{0.3}{0.5em}{cvpurple} \\
-     \bg{skilllabelcolour}{iconcolour}{Heroku} & \barrule{0.3}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{docker, git, github} & \barrule{0.3}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{heroku} & \barrule{0.3}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{web-parsing} & \barrule{0.45}{0.5em}{cvpurple} \\
      
 \end{tabular}
 
-\bgupper{cvgreen}{white}{Soft Skills} \\
-{\large
-	\cvtag{Fleissigkeit}
-	\cvtag{Ehrlichkeit}
-	\cvtag{Respektabilität}
-}
+%\bgupper{cvgreen}{white}{Soft Skills} \\
+%{\large
+%	\cvtag{Fleissigkeit}
+%	\cvtag{Ehrlichkeit}
+%	\cvtag{Respektabilität}
+%}
 
 
 %\dashrule{}{}
@@ -163,7 +180,7 @@ FastApi }
 \switchcolumn
 
 \small
-\section*{Short Resumé}
+\section*{Berufliche Erfahrung}
 
 \begin{tabular}{r| p{0.4\textwidth} c}
     \cvevent{2018--2025}{Eigener Projekt}{Analyse der Wahlen}{Deutschland \color{cvred}}{Application.}{Python} \\
@@ -218,19 +235,36 @@ FastApi }
 %\cvkeyword{Barbossa}{cvgreen}{iconcolour} \\
 
 %\cvkeyword{possibly Mr. Swan}{headerblue}{iconcolour}
-\cvkeyword{ \href{https://github.com/AlexanderUhmann/streamlit_cs}{App Credit Scoring}   }{headerblue}{iconcolour}
+%\cvkeyword{ \href{https://github.com/AlexanderUhmann/streamlit_cs}{App Credit Scoring}}{headerblue}{iconcolour}\\
+\href{https://github.com/AlexanderUhmann/streamlit_cs}{App Credit Scoring}
 
 \end{minipage}\hfill
 \begin{minipage}[t]{0.3\textwidth}
-\section*{Publications}
+%\section*{Publications}
+\section*{Projekte}
+%\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
+%    1729 & \emph{How I almost got killed by Lady Swan}, Tortuga Printing Press. \\
+%    1720 & ``Privateering for Beginners'', in: \emph{The Pragmatic Pirate} (1/1720).
+%\end{tabular}
+
+\begin{tabular}{r| p{0.4\textwidth} c}
+%	\cvevent{2018--2025}{Eigener Projekt}{Analyse der Wahlen}{Deutschland \color{cvred}}{Application.}{Python} \\
+%	\cvevent{2022--2025}{Eigener Projekt}{Credit scoring}{Taiwan 2005 \color{cvred}}{Application.}{Python} \\
+	%\cvevent{2019}{Freelance Pirate}{Bucaneering}{Tortuga \color{cvred}}{This and that. The usual, aye?}{medal.jpeg} \\
+	%\cvevent{2016--2017}{Captain of the Black Pearl}{Lead}{Tortuga \color{cvred}}{Found a secret treasure, lost the ship.}{medal.jpeg}
+\end{tabular}
+
 \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
-    1729 & \emph{How I almost got killed by Lady Swan}, Tortuga Printing Press. \\
-    1720 & ``Privateering for Beginners'', in: \emph{The Pragmatic Pirate} (1/1720).
+    2018--2025&\emph{Analyse der Wahlen} \\
+    2022--2025&\emph{Credit scoring Taiwan 2005}
 \end{tabular}
-\section*{Talks}
-\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.6\textwidth}}
-    Nov. 1726 & ``How I lost my ship (\& and how to get it back)'', at: \emph{Annual Pirate's Conference} in Tortuga, Nov. 1726.
-\end{tabular}
+
+
+%\section*{Talks}
+%\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.6\textwidth}}
+%    Nov. 1726 & ``How I lost my ship (\& and how to get it back)'', at: \emph{Annual Pirate's Conference} in Tortuga, Nov. 1726.
+%\end{tabular}
+
 \end{minipage}
 
 
@@ -247,12 +281,15 @@ FastApi }
 %	FINAL FOOTER
 %----------------------------------------------------------------------------------------
 \setlength{\parindent}{0pt}
-\begin{minipage}[t]{\rightcolwidth}
-\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
-{\small Alexander Uhmann \icon{\faEnvelopeO}{cvpurple}{} Sachsen \icon{\faMapMarker}{cvpurple}{} Leipzig \icon{\faPhone}{cvpurple}{} 0172/1854194 \newline\icon{\faAt}{cvpurple}{} \protect\url{alexander.uhmann@gmail.com}
-}
-\end{center}
-\end{minipage}
+%\begin{minipage}[t]{\rightcolwidth}
+%\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+%{\small Alexander Uhmann \icon{\faEnvelopeO}{cvpurple}{} Sachsen \icon{\faMapMarker}{cvpurple}{} Leipzig \icon{\faPhone}{cvpurple}{} 0172/1854194 \newline\icon{\faAt}{cvpurple}{}	 
+%{\Large \protect\url{  alexander.uhmann@gmail.com}\\ 
+%\vspace{2em}
+%\textit{\today}}	
+%}
+%\end{center}
+%\end{minipage}
 
 
 \end{paracol}
